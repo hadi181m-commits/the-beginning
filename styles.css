@@ -327,13 +327,14 @@ section h2 {
 .contact-card {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  padding: 0.9rem 1.25rem;
   text-decoration: none;
   color: var(--text);
+  font-weight: 600;
   transition: border-color 0.2s ease, transform 0.15s ease;
 }
 
@@ -343,8 +344,9 @@ section h2 {
 }
 
 .contact-card .icon {
-  width: 28px;
-  height: 28px;
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   color: var(--accent);
 }
@@ -352,18 +354,6 @@ section h2 {
 .contact-card .icon svg {
   width: 100%;
   height: 100%;
-}
-
-.contact-card .label {
-  font-weight: 600;
-  display: block;
-}
-
-.contact-card .sublabel {
-  display: block;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  margin-top: 0.15rem;
 }
 
 .placeholder-note-spaced {
