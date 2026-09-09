@@ -178,6 +178,93 @@ section h2 {
   font-size: 0.95rem;
 }
 
+.tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tier {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tier > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.75rem;
+}
+
+.tier > summary::-webkit-details-marker {
+  display: none;
+}
+
+.tier > summary::before {
+  content: '▸';
+  color: var(--accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.tier[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.tier-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.tier-count {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1.75rem 1.75rem;
+}
+
+.module-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.module-number {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.module-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.module-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
+}
+
 .page-hero {
   text-align: center;
   padding: 4rem 6% 2rem;
