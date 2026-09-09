@@ -265,6 +265,40 @@ section h2 {
   font-size: 0.9rem;
 }
 
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.embed-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 56.25%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-fallback {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .page-hero {
   text-align: center;
   padding: 4rem 6% 2rem;
