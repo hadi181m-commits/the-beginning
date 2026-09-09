@@ -273,30 +273,19 @@ section h2 {
   font-size: 1.05rem;
 }
 
-.embed-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
+.embed-callout {
+  max-width: 600px;
   margin: 0 auto;
-  padding-top: 56.25%;
+  text-align: center;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 12px;
-  overflow: hidden;
+  padding: 3rem 2rem;
 }
 
-.embed-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.embed-fallback {
-  text-align: center;
-  margin-top: 2rem;
+.embed-callout p {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
 }
 
 .page-hero {
